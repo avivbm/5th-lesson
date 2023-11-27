@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+class HelloWorld {
+    public static void reversed(String word) {
+        char first = word.charAt(2);
+        char second = word.charAt(1);
+        char third = word.charAt(0);
+        System.out.println("" + first + second + third);
+    }
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String word = "";
+        while (word.length() != 3)
+        {
+            System.out.println("enter a 3-letter word");
+            word = sc.nextLine();
+        }
+        reversed(word);
+    }
+}
