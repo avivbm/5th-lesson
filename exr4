@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+class HelloWorld {
+    public static double SumAndAvg(int num, int num2, int num3) {
+        int sum = num + num2 + num3;
+        System.out.println("The sum of the numbers is: " + sum);
+        double avg = (num + num2 + num3) / 3.0;
+        return avg;
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("enter 2 numbers");
+        int num = sc.nextInt();
+        int num2 = sc.nextInt();
+        int num3 = sc.nextInt();
+        double avg = SumAndAvg(num, num2, num3);
+        System.out.println(avg);
+    }
+}
