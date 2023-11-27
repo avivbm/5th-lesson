@@ -1,4 +1,5 @@
 import java.util.Scanner;
+
 class HelloWorld {
     public static void DivideBy5(int number) {
         int count = 0;
@@ -11,3 +12,10 @@ class HelloWorld {
         }
         System.out.println("The numbers divisible by 5 from 1 to the number " + number + " are: " + count);
     }
+public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter a number: ");
+        int number = scanner.nextInt();
+        DivideBy5(number);
+    }
+}
