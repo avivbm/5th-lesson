@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 class HelloWorld {
     public static void HELLO() {
         Scanner scan = new Scanner(System.in);
