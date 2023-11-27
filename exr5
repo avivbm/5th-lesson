@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+class HelloWorld {
+    public static void CIRCLE(double radius) {
+        double circumference = 2 * Math.PI * radius;
+        double area = Math.PI * Math.pow(radius, 2);
+        System.out.println("circumference: " + circumference);
+        System.out.println("area: " + area);
+    }
+    
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter a number");
+        double radius = sc.nextDouble();
+        CIRCLE(radius);
+    }
+}
