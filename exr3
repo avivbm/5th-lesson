@@ -1,16 +1,16 @@
 import java.util.Scanner;
 
 class HelloWorld {
-    public static int multiply(int a, int b) {
-        return a * b;
+    public static int multiply(int num, int num2) {
+        return num * num2;
     }
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("enter 2 numbers");
-        int num1 = sc.nextInt();
+        int num = sc.nextInt();
         int num2 = sc.nextInt();
-        int result = multiply(num1, num2);
+        int result = multiply(num, num2);
         System.out.println("The result of multiplying the numbers " + num1 + " and " + num2 + " is " + result );
     }
 }
