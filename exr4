@@ -10,7 +10,7 @@ class HelloWorld {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.print("enter 2 numbers");
+        System.out.print("enter 3 numbers");
         int num = sc.nextInt();
         int num2 = sc.nextInt();
         int num3 = sc.nextInt();
