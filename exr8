@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+class HelloWorld {
+    public static int series(int a1, int d, int n) {
+        int An = a1+(n - 1)*d;
+        return An;
+    }
+    
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter the first number of a sequence, the difference of the sequence and the index of the number you want to find");
+        int a1 = sc.nextInt();
+        int d = sc.nextInt();
+        int n = sc.nextInt();
+        int An = series(a1, d, n);
+        System.out.println(An);
+    }
+}
