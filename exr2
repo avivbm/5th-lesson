@@ -1,19 +1,13 @@
 import java.util.Scanner;
-
 class HelloWorld {
-    public static void ENTER() {
-        Scanner sc = new Scanner(System.in);
+    public static void DivideBy5(int number) {
         int count = 0;
-        String str = "";
-        while (!str.equals("enter"))
+        for (int i = 1; i <= number; i++) 
         {
-            count += 1;
-            System.out.println("enter a word");
-            str = sc.nextLine();
+            if (i % 5 == 0) 
+            {
+                count++;
+            }
         }
-        System.out.println(count);
+        System.out.println("The numbers divisible by 5 from 1 to the number " + number + " are: " + count);
     }
-    public static void main(String[] args) {
-        ENTER();
-    }
-}
